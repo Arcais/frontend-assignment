@@ -17,7 +17,7 @@ should open a browser on http://localhost:8080 that shows a playground.
 - the provided `preact` and `goober` libraries should be used to create this component.
 - the file that contains the badge implementation is [here](src/badge/index.js).
 - the icon can be found in the `public/img` folder and is allowed to be embedded directly.
-- if your finished, stuck or it takes you more than 4 hours please let your contact at Crobox know.
+- if you are finished, stuck or it takes you more than 4 hours please let your contact at Crobox know.
 
 ## Configurable props
 - badge text content
