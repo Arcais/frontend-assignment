@@ -3,20 +3,20 @@
 ![Assignment](assignment.png)
 
 ## Getting started
-This project is pre-configured to get you started quickly
-
+This project is pre-configured to get you started quickly; running
 ```
 npm install
 npm run dev
 ```
-Should open a browser on http://localhost:8080 that shows a playground.
+should open a browser on http://localhost:8080 that shows a playground.
 
 ## Instructions
-- The assignment is to implement a Badge with a tooltip. See the image as example
-- This badge is configurable, and the props are already passed in.
+- the assignment is to implement a Badge with a tooltip; See the image as example.
+- this badge is configurable, and the props are already passed in.
 - the provided `preact` and `goober` libraries should be used to create this component.
-- there is [only file](src/badge/index.js) that requires implementation
-
+- the file that contains the badge implementation is [here](src/badge/index.js).
+- the icon can be found in the `public/img` folder and is allowed to be embedded directly.
+- if your stuck or it takes you more than 4 hours please let your contact at Crobox know.
 
 ## Configurable props
 - badge text content
@@ -30,8 +30,7 @@ Should open a browser on http://localhost:8080 that shows a playground.
 
 ## Requirements
 - icon only visible when tooltip text is available
-- icon background color must follow badge text color
+- the icon background color must follow badge text color
 - badge width should scale with content (with a max width of the parent).
 - when content exceeds badge width, ellipsis (…) should be applied.
-- tooltip width should scale with content (with a max width of 240)
-- when tooltip
+- tooltip width should scale with content (with a max width of 240px)
