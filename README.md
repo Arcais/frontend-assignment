@@ -35,3 +35,7 @@ should open a browser on http://localhost:8080 that shows a playground.
 - badge width should scale with content (with a max width of the parent).
 - when content exceeds badge width, ellipsis (…) should be applied.
 - tooltip width should scale with content (with a max width of 240px)
+- when the tooltip is tapped, it should disappear again after 10 seconds
+- the assignment should work on all modern browsers and gracefully on IE11
+- project should compile on Linux
+
