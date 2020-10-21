@@ -11,12 +11,12 @@ npm run dev
 should open a browser on http://localhost:8080 that shows a playground.
 
 ## TODOs
-- Add tooltip styling and center it on the tooltip button
 - Add tooltip hover and tap functionality
 - Add tap 10 second expiration functionality
 - Styling fixes: icon color (currentColor fill), elipsis text wrap
 - Polish styling
 - Browser compatibility and other requirements (if any)
+- Get rid of magic numbers maybe? Try goober variables (if they exist)?
 
 ## Instructions
 - please fork this repository and do regular commit's so Crobox can see your thinking / development progress.
