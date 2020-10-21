@@ -25,7 +25,7 @@ const TooltipButton = ({tooltipText}) => {
 
     return (
         <span class={TooltipWrapperClass}>
-            {(displayTooltip && tooltipText) && 
+            {displayTooltip && 
                 <Tooltip 
                     tooltipText={tooltipText} 
                     hideTooltip={hideTooltip} 

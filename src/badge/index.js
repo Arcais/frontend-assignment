@@ -11,7 +11,7 @@ const Badge = ({text, color, bgColor, tooltip}) => {
 	return (
 		<div class={ BadgeClass({ color, bgColor }) }>
 			{text}
-			<TooltipButton tooltipText={tooltip}></TooltipButton>
+			{tooltip && <TooltipButton tooltipText={tooltip}></TooltipButton> }
 		</div>
 	);
 }
