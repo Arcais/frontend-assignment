@@ -11,8 +11,6 @@ npm run dev
 should open a browser on http://localhost:8080 that shows a playground.
 
 ## TODOs
-- Add tooltip hover and tap functionality
-- Add tap 10 second expiration functionality
 - Styling fixes: icon color (currentColor fill), elipsis text wrap
 - Polish styling
 - Browser compatibility and other requirements (if any)
