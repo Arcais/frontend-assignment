@@ -2,6 +2,7 @@ import { h } from 'preact';
 import { useState } from 'preact/hooks'
 import { css } from 'goober';
 import Tooltip from './Tooltip';
+import TooltipIcon from '../icons/TooltipIcon';
 
 const TooltipWrapperClass =  css`
     position: relative;
@@ -31,9 +32,7 @@ const TooltipButton = ({tooltipText}) => {
                     activatedByTap={iconTapped}
                 />
             }
-            <img 
-                src="img/icon_tooltip.svg" 
-                alt="Tooltip Icon"
+            <TooltipIcon
                 onTouchEnd={()=>{ setIconTapped(true); showTooltip(); }}
                 onMouseEnter={showTooltip}
                 onMouseLeave={hideTooltip}

@@ -16,6 +16,13 @@ should open a browser on http://localhost:8080 that shows a playground.
 - Browser compatibility and other requirements (if any)
 - Get rid of magic numbers maybe? Try goober variables (if they exist)?
 
+## Notes
+In regards to the svg icon, the ".svg" file can be deleted since it's now a react component but I am not sure if that is allowed.
+There are a few alternatives:
+- Would it be possible to load it with SVGR instead? 13kb unpacked bundle size
+- Dynamically importing the svg icons is also an option although overkill for this
+- A ligthweight hack would be to use <img> with a mask and have the wrapper use the parent's background color (if it's NECESSARY to use <img> - load the image separately from the HTML)
+
 ## Instructions
 - please fork this repository and do regular commit's so Crobox can see your thinking / development progress.
 - the assignment is to implement a Badge with a tooltip; See the image as example.
