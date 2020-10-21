@@ -1,17 +1,17 @@
 import { h } from 'preact';
 import { css } from 'goober';
+import TooltipButton from '../Tooltip/TooltipButton';
 
 const BadgeClass = ({color, bgColor: backgroundColor}) => css({
 	color,
 	backgroundColor
 });
 
-// props: {text, tooltip, bgColor, color}
-const Badge = ({text, color, bgColor}) => {
+const Badge = ({text, color, bgColor, tooltip}) => {
 	return (
 		<div class={ BadgeClass({ color, bgColor }) }>
 			{text}
-			<img src="img/icon_tooltip.svg" alt="Tooltip Icon" />
+			<TooltipButton tooltipText={tooltip}></TooltipButton>
 		</div>
 	);
 }
