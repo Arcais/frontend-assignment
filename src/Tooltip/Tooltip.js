@@ -36,7 +36,7 @@ const Tooltip = ({tooltipText, hideTooltip, activatedByTap}) => {
     // Using different component with useEffect to prevent memory leaks
     useEffect(() => {
         if(activatedByTap) {
-            const tooltipClearTimeout = setTimeout(() => hideTooltip(), 5000);
+            const tooltipClearTimeout = setTimeout(() => hideTooltip(), 10000);
             return () => clearTimeout(tooltipClearTimeout);
         }
     },[]);
