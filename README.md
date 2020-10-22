@@ -15,6 +15,7 @@ The project did not run on IE11 in its vanilla/post-fork state. I am not sure if
 
 ### Badge
 In regards to the badge, I added one more test in case the text exceeds the width and a tooltip should be shown as well.
+
 There is also a known minor styling bug with the badge: when there is no tooltip icon the badge becomes shorter due to the icon height being bigger than the text. This could be fixed by giving the text a fixed height that is the same as the icon but that would imply using another magic number (21px). If we used css variables it would have made more sense but I decided to leave it as it is for now.
 
 ### Svg icon
@@ -26,6 +27,7 @@ There are a few alternatives:
 
 ### Tap expiry bug
 There is currently a hard to reproduce bug where the tooltip does not disappear after 10 seconds. I tried debugging it but unluckily I have not managed to reproduce it with logs or debuggers running. I will think of a different way to approach the tap expiry as I assume this is either a state problem or a "clearTimeout" problem.
+
 On the current version it doesn't seem to happen anymore
 
 ## Instructions
