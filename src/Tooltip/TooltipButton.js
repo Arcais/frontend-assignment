@@ -16,30 +16,25 @@ const TooltipWrapperClass =  css`
 // - Make taps extend duration  of tooltip
 // - Make clicking away not hide the tooltip
 const TooltipButton = ({tooltipText}) => {
-    const [displayTooltip, setDisplayTooltip] = useState(false);
-    const [iconTapped, setIconTapped] = useState(false);
+    const [tooltipInteraction, setTooltipInteraction] = useState("");
 
     const hideTooltip = () => {
-        setDisplayTooltip(false);
-        setIconTapped(false);
-    }
-    const showTooltip = () => {
-        setDisplayTooltip(true)
+        setTooltipInteraction("");
     }
 
     return (
         <span class={TooltipWrapperClass}>
-            {displayTooltip && 
+            {tooltipInteraction && 
                 <Tooltip 
                     tooltipText={tooltipText} 
                     hideTooltip={hideTooltip} 
-                    activatedByTap={iconTapped}
+                    tooltipInteraction={tooltipInteraction}
                 />
             }
             <TooltipIcon
-                onTouchEnd={()=>{ setIconTapped(true); showTooltip(); }}
-                onMouseEnter={showTooltip}
-                onMouseLeave={hideTooltip}
+                onTouchEnd={()=>{ setTooltipInteraction("tap") }}
+                onMouseEnter={()=>{ setTooltipInteraction("hover") }}
+                onMouseLeave={()=>{ setTooltipInteraction("") }}
             />
         </span>
     );

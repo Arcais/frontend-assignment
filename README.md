@@ -26,6 +26,7 @@ There are a few alternatives:
 
 ### Tap expiry bug
 There is currently a hard to reproduce bug where the tooltip does not disappear after 10 seconds. I tried debugging it but unluckily I have not managed to reproduce it with logs or debuggers running. I will think of a different way to approach the tap expiry as I assume this is either a state problem or a "clearTimeout" problem.
+On the current version it doesn't seem to happen anymore
 
 ## Instructions
 - please fork this repository and do regular commit's so Crobox can see your thinking / development progress.

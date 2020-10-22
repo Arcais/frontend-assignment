@@ -32,10 +32,10 @@ const TooltipClass = css`
     }
 `;
 
-const Tooltip = ({tooltipText, hideTooltip, activatedByTap}) => {
+const Tooltip = ({tooltipText, hideTooltip, tooltipInteraction}) => {
     // Using different component with useEffect to prevent memory leaks
     useEffect(() => {
-        if(activatedByTap) {
+        if(tooltipInteraction === "tap") {
             const tooltipClearTimeout = setTimeout(() => hideTooltip(), 10000);
             return () => clearTimeout(tooltipClearTimeout);
         }
