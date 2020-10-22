@@ -45,6 +45,12 @@ const inputs = [
         text: "This season Winterjacket's editors choice",
         color: "#3CC6A7",
         bgColor: "#000000"
+    },
+    {
+        text: "This text is very long so much so that it goes over max content used",
+        color: "#2C3E50",
+        bgColor: "#1ABC9C",
+        tooltip: "Something something tooltippy tooltip, tooltip content lorem ipsum something."
     }
 ]
 
