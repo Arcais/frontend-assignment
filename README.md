@@ -24,6 +24,9 @@ There are a few alternatives:
 - Dynamically importing the svg icons is also an option although overkill for this
 - A ligthweight hack would be to use <img> with a mask and have the wrapper use the parent's background color (if it's NECESSARY to use <img> - load the image separately from the HTML)
 
+### Tap expiry bug
+There is currently a hard to reproduce bug where the tooltip does not disappear after 10 seconds. I tried debugging it but unluckily I have not managed to reproduce it with logs or debuggers running. I will think of a different way to approach the tap expiry as I assume this is either a state problem or a "clearTimeout" problem.
+
 ## Instructions
 - please fork this repository and do regular commit's so Crobox can see your thinking / development progress.
 - the assignment is to implement a Badge with a tooltip; See the image as example.
