@@ -10,13 +10,14 @@ npm run dev
 ```
 should open a browser on http://localhost:8080 that shows a playground.
 
-## TODOs
-- Styling fixes: icon color (currentColor fill), elipsis text wrap
-- Polish styling
-- Browser compatibility and other requirements (if any)
-- Get rid of magic numbers maybe? Try goober variables (if they exist)?
-
 ## Notes
+The project did not run on IE11 in its vanilla/post-fork state. I am not sure if this was intended but I assumed it wasn't and I continued with building the badge itself.
+
+### Badge
+In regards to the badge, I added one more test in case the text exceeds the width and a tooltip should be shown as well.
+There is also a known minor styling bug with the badge: when there is no tooltip icon the badge becomes shorter due to the icon height being bigger than the text. This could be fixed by giving the text a fixed height that is the same as the icon but that would imply using another magic number (21px). If we used css variables it would have made more sense but I decided to leave it as it is for now.
+
+### Svg icon
 In regards to the svg icon, the ".svg" file can be deleted since it's now a react component but I am not sure if that is allowed.
 There are a few alternatives:
 - Would it be possible to load it with SVGR instead? 13kb unpacked bundle size

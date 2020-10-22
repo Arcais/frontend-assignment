@@ -2,15 +2,30 @@ import { h } from 'preact';
 import { css } from 'goober';
 import TooltipButton from '../Tooltip/TooltipButton';
 
-const BadgeClass = ({color, bgColor: backgroundColor}) => css({
+const BadgeWrapperClass = ({color, bgColor: backgroundColor}) => css({
 	color,
-	backgroundColor
+	backgroundColor,
+	display: "flex",
+    flexFlow: "row nowrap",
+	alignItems: "center",
+	width: "max-content",
+	maxWidth: "100%",
+	borderRadius: "20px",
+	padding: "6px",
 });
+
+const BadgeTextClass = css`
+	font-weight: bold;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+    margin: 0 6px; /* Can act as a flexbox grid pseudo gutter */
+`;
 
 const Badge = ({text, color, bgColor, tooltip}) => {
 	return (
-		<div class={ BadgeClass({ color, bgColor }) }>
-			{text}
+		<div class={ BadgeWrapperClass({ color, bgColor }) }>
+			<span class={ BadgeTextClass }> {text} </span>
 			{tooltip && <TooltipButton tooltipText={tooltip}></TooltipButton> }
 		</div>
 	);

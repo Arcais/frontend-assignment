@@ -5,7 +5,11 @@ import Tooltip from './Tooltip';
 import TooltipIcon from '../icons/TooltipIcon';
 
 const TooltipWrapperClass =  css`
+    display: inline-block;
     position: relative;
+    width: 21px; /* icon sizes */
+    height: 21px;
+    margin: 0 6px;
 `;
 
 // Possible TODOS? Not mentioned in spec:
