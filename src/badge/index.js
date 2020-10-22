@@ -12,6 +12,12 @@ const BadgeWrapperClass = ({color, bgColor: backgroundColor}) => css({
 	maxWidth: "100%",
 	borderRadius: "20px",
 	padding: "6px",
+	/* Temporary keyframes workaround as goober does not give keyframes export apparently */
+	'@keyframes fadeIn': {
+		from: {opacity: 0},
+		to: {opacity: 1}
+	},
+	animation: "fadeIn 0.5s",
 });
 
 const BadgeTextClass = css`
